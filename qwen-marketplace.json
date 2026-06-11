@@ -1,0 +1,29 @@
+{
+  "name": "qwen-marketplace-demo",
+  "description": "A demo Qwen Code extension marketplace for testing source parsing, discovery, and install.",
+  "version": "1.0.0",
+  "owner": { "name": "BZ-D" },
+  "metadata": { "extensionRoot": "extensions" },
+  "extensions": [
+    {
+      "name": "hello-qwen",
+      "version": "1.0.0",
+      "description": "A native Qwen Code extension that adds a /hello command.",
+      "author": "BZ-D",
+      "category": "demo",
+      "tags": ["demo", "qwen", "native"],
+      "source": "./hello-qwen",
+      "components": { "commands": ["hello"] }
+    },
+    {
+      "name": "hello-claude",
+      "version": "1.0.0",
+      "description": "A Claude Code plugin, auto-converted to Qwen format on install.",
+      "author": "BZ-D",
+      "category": "demo",
+      "tags": ["demo", "claude", "converted"],
+      "source": "./hello-claude",
+      "components": { "commands": ["greet"] }
+    }
+  ]
+}
