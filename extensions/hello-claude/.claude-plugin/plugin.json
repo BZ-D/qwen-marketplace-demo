@@ -1,5 +1,11 @@
 {
   "name": "hello-claude",
   "version": "1.0.0",
-  "description": "Says hello from a Claude Code plugin (auto-converted on install)."
+  "description": "A Claude Code plugin (auto-converted on install), with a Claude-format MCP server and a skill.",
+  "mcpServers": {
+    "demo-http": {
+      "type": "http",
+      "url": "https://mcp.example.com/mcp"
+    }
+  }
 }

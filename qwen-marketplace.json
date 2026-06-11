@@ -8,22 +8,30 @@
     {
       "name": "hello-qwen",
       "version": "1.0.0",
-      "description": "A native Qwen Code extension that adds a /hello command.",
+      "description": "A native Qwen Code extension: a /hello command, an MCP server, and a skill.",
       "author": "BZ-D",
       "category": "demo",
       "tags": ["demo", "qwen", "native"],
       "source": "./hello-qwen",
-      "components": { "commands": ["hello"] }
+      "components": {
+        "commands": ["hello"],
+        "skills": ["greeting-helper"],
+        "mcpServers": ["everything"]
+      }
     },
     {
       "name": "hello-claude",
       "version": "1.0.0",
-      "description": "A Claude Code plugin, auto-converted to Qwen format on install.",
+      "description": "A Claude Code plugin, auto-converted to Qwen format on install (command + MCP + skill).",
       "author": "BZ-D",
       "category": "demo",
       "tags": ["demo", "claude", "converted"],
       "source": "./hello-claude",
-      "components": { "commands": ["greet"] }
+      "components": {
+        "commands": ["greet"],
+        "skills": ["farewell-helper"],
+        "mcpServers": ["demo-http"]
+      }
     }
   ]
 }

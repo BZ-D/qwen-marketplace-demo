@@ -1,5 +1,11 @@
 {
   "name": "hello-qwen",
   "version": "1.0.0",
-  "description": "Says hello from a native Qwen Code extension."
+  "description": "Says hello from a native Qwen Code extension, bundling an MCP server and a skill.",
+  "mcpServers": {
+    "everything": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everything"]
+    }
+  }
 }
